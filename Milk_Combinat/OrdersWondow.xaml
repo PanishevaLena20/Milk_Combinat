@@ -1,0 +1,32 @@
+﻿<Window x:Class="Milk_Combinat.OrdersWondow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:Milk_Combinat"
+        mc:Ignorable="d"
+        Title="OrdersWondow" Height="450" Width="800">
+    <Grid>
+            <Grid.RowDefinitions>
+                <RowDefinition Height="Auto"/>
+                <RowDefinition Height="*"/>
+                <RowDefinition Height="Auto"/>
+            </Grid.RowDefinitions>
+            <Border Grid.Row="0" Height="60" Background="#F39C12">
+                <TextBlock Text="Просмотр заказов" FontSize="20" FontWeight="Bold" Foreground="White" HorizontalAlignment="Center" VerticalAlignment="Center"/>
+            </Border>
+            <ListBox x:Name="lstOrders" Grid.Row="1" Margin="10">
+                <ListBoxItem>Заказ №1 - 28.05.2025 - 389.97 ₽ - Завершён</ListBoxItem>
+                <ListBoxItem>Заказ №2 - 28.05.2025 - 259.98 ₽ - Завершён</ListBoxItem>
+                <ListBoxItem>Заказ №3 - 28.05.2025 - 149.99 ₽ - Завершён</ListBoxItem>
+                <ListBoxItem>Заказ №4 - 27.05.2025 - 499.97 ₽ - Завершён</ListBoxItem>
+                <ListBoxItem>Заказ №5 - 27.05.2025 - 849.98 ₽ - Завершён</ListBoxItem>
+                <ListBoxItem>Заказ №6 - 28.05.2025 - 199.98 ₽ - В обработке</ListBoxItem>
+            </ListBox>
+            <StackPanel Grid.Row="2" Orientation="Horizontal" HorizontalAlignment="Center" Margin="10">
+                <Button x:Name="btnViewDetails" Content="Просмотреть детали" Width="150" Height="35" Margin="5" Click="btnViewDetails_Click_1"/>
+                <Button x:Name="btnClose" Content="Закрыть" Width="100" Height="35" Margin="5" Background="#E74C3C" Foreground="White" Click="btnClose_Click_1"/>
+            </StackPanel>
+        </Grid>
+</Window>
+

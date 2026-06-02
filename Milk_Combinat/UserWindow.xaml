@@ -1,0 +1,26 @@
+﻿<Window x:Class="Milk_Combinat.UserWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:Milk_Combinat"
+        mc:Ignorable="d"
+        Title="UserWindow" Height="450" Width="800">
+    <Grid>
+            <Grid.RowDefinitions>
+                <RowDefinition Height="Auto"/>
+                <RowDefinition Height="*"/>
+            </Grid.RowDefinitions>
+            <Border Grid.Row="0" Height="80" Background="#3498DB">
+                <StackPanel VerticalAlignment="Center" Margin="15">
+                    <TextBlock Text="Панель пользователя" FontSize="24" FontWeight="Bold" Foreground="White" HorizontalAlignment="Center"/>
+                </StackPanel>
+            </Border>
+            <Border Grid.Row="1" Margin="20">
+                <StackPanel>
+                    <TextBlock x:Name="lblWelcome" FontSize="18" FontWeight="Bold" HorizontalAlignment="Center" Margin="0,20,0,20"/>
+                </StackPanel>
+            </Border>
+        </Grid>
+</Window>
+
